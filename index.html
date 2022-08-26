@@ -7,19 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-xs-18 col-sm-9 col-lg-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-xs-3 col-sm-1.5 col-lg-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
@@ -36,23 +37,31 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-xs-7.5 col-sm-3.75 col-lg-5">
         <div id="bar"></div>
+        <br>
+        <p>The bar chart (above) displays the top 10 bacterial species (OTUs) found in the belly button of the selected subject. The x values represent the amount of each bacteria found, the y values display the id OTU identification number, and if you hover over a bar, the species name(s) are displayed.</p>
+        <br>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <br>
+        <p>The gauge chart (above) represents the frequency with which the selected subject reported washing their belly button between 0 times and 10+ times per week.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-xs-18 col-sm-9 col-lg-12">
         <div id="bubble"></div>
+        <br>
+        <p>The bubble chart displays the different bacterial species, as well as the amount of each species found in the belly button of the selected subject. The x values represent the different OTU identification numbers, the y values represent the amount of each bacteria found, the size of each bubble is proportional to the amount of bacteria found, and if you hover over a bubble, the species name(s) are displayed.</p>
+      
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <script src="js/charts.js"></script>
 
 </body>
 
