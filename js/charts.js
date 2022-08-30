@@ -1,4 +1,4 @@
-// Still need one more customization
+
 function init() {
   var selector = d3.select("#selDataset");
 
